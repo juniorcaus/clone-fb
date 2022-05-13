@@ -3,6 +3,7 @@ import Login from './components/Login';
 import GlobalStyles from './styles/global';
 import { AuthContext } from './contexts/auth';
 import Header from './components/Header';
+import HeaderIcon from './components/HeaderIcon';
 
 const App = () => {
   const { user } = useContext(AuthContext);

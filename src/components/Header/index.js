@@ -22,13 +22,23 @@ const Header = () =>  {
                 </C.divSearch>
             </C.Section>
             <C.Section className="section2" >
-               {/*  <HeaderIcon Icon={MdHome} />
+                 <HeaderIcon Icon={MdHome} active />
                 <HeaderIcon Icon={MdOndemandVideo} />
                 <HeaderIcon Icon={FaStore} />
                 <HeaderIcon Icon={MdGroups} />
-                <HeaderIcon Icon={SiNintendogamecube} /> */}
+                <HeaderIcon Icon={SiNintendogamecube} display="web" /> 
+                <HeaderIcon Icon={FiMenu} display="mobile" />
             </C.Section>
-            <C.Section className="section3" ></C.Section>
+            <C.Section className="section3" >
+                <C.Div>
+                    <C.Image src={user.avatarUrl} onClick={signOut} />
+                    <C.Label> {user.name.split(" ")[0]}</C.Label>
+                </C.Div>
+                <HeaderIcon Icon={CgMenuGridO} section="section3" />
+                <HeaderIcon Icon={SiMessenger} section="section3" />
+                <HeaderIcon Icon={MdNotifications} section="section3" />
+                <HeaderIcon Icon={FaCaretDown} section="section3" />
+            </C.Section>
         </C.Content>
     </C.Container>
 );
