@@ -4,6 +4,7 @@ import GlobalStyles from './styles/global';
 import { AuthContext } from './contexts/auth';
 import Header from './components/Header';
 import Body from './components/Body';
+import Contacts from './components/Contacts';
 
 
 const App = () => {
