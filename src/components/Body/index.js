@@ -11,6 +11,7 @@ const Body = () => {
     <C.Container>
         <Shortcuts />
         <Feed/>
+        {/* <NewPost /> */}
         <Contacts />
     </C.Container>
   );
